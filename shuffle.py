@@ -1,3 +1,6 @@
+# -h : -h help
+# -n counts : Uniform random counts
+
 import numpy as np
 import getopt
 import sys
@@ -7,12 +10,12 @@ def usage():
     print(' -h help \n' \
           ' -n counts \n')
 
-# TODO :
+# TODO : suffle & turn over cards for [counts] times
 def shuffle(counts):
     # TODO : generate 1~100 cards
     cards = list(range(1,101))
 
-    # TODO : suffle & turned over cards
+    # TODO : suffle & turn over cards
     n_list = []
     for i in range(0, counts) :
         random.shuffle(cards)
