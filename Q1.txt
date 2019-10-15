@@ -1,0 +1,6 @@
+python3 uniform.py -n 100
+2.79
+python3 uniform.py -n 1000
+2.745
+python3 uniform.py -n 10000
+2.7042
