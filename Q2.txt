@@ -1,15 +1,9 @@
 python3 shuffle.py -n 100
-expectation : 50.866667
-variance : 915.615556
+expectation : 1.060000
+variance : 1.076400
 python3 shuffle.py -n 1000
-expectation : 40.035494
-variance : 800.117567
+expectation : 0.932000
+variance : 0.939376
 python3 shuffle.py -n 10000
-expectation : 42.597697
-variance : 799.951680
-python3 shuffle.py -n 100000
-expectation : 42.205831
-variance : 790.682020
-python3 shuffle.py -n 500000
-expectation : 42.169712
-variance : 794.302782
+expectation : 0.991100
+variance : 0.982221

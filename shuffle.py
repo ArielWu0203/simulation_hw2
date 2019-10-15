@@ -15,14 +15,15 @@ def shuffle(counts):
     # TODO : generate 1~100 cards
     cards = list(range(1,101))
 
-    # TODO : suffle & turn over cards
+    # TODO : suffle & turn over cards and calculate hit times
     n_list = []
     for i in range(0, counts) :
         random.shuffle(cards)
+        sum = 0
         for index, item in enumerate(cards, 1):
             if index == item:
-                n_list.append(index)
-                break
+                sum += 1
+        n_list.append(sum)
     
     print("expectation : %f" % np.mean(n_list))
     print("variance : %f" % np.var(n_list))
