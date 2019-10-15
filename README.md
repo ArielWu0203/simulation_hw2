@@ -9,7 +9,8 @@ python3 uniform.py -n 1000
 python3 uniform.py -n 10000
 2.7042
 ```
-根據計算出的期望值 n 約等於 2.7，可以發現平均上來說，約做 2~3 次的 uniform random 就可以使總和(U1+U2+...) 大於 1。
+根據計算出的期望值 n 約等於 2.7，可以發現平均上來說，約做 2~3 次的 uniform random 可以使總和(U1+U2+...) 大於 1。    
+
 ## Q2
 ![](https://github.com/ArielWu0203/simulation_hw2/blob/master/4.4.png?raw=true)
 ```
@@ -29,3 +30,7 @@ python3 shuffle.py -n 500000
 expectation : 42.169712
 variance : 794.302782
 ```
+第一次抽到 1 的機率 : 0.01    
+第一次沒抽到 1 ，第二次抽到 2 的機率 : 0.99 * (1/99)      
+第三次抽到 3 的機率 : 0.99 * (98/99) * (1/98)
+第四次抽到 4 的機率 : 0.99 * (98/99) * (97/98) * (1/97)
