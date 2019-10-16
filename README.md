@@ -24,4 +24,7 @@ python3 shuffle.py -n 10000
 expectation : 0.991100
 variance : 0.982221
 ```
+* 預估     
+  $E[X] = n \dot \frac{1}{n} = 1$          
+  $Var[X] = E[X^2] - 1 = 1 + n(n+1) * (1 / (n(n+1))) -1 = 1$
 
